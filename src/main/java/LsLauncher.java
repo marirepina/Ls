@@ -48,14 +48,7 @@ public class LsLauncher {
 
 
     public static void main(String[] args) {
-        //List<String> res = new LsLauncher().launch(args);
-        //System.out.println(res);
-        List<String> res = new LsLauncher().launch( "--long", "TestDir/TestF2");
-        if (res.size() > 1){            //edit
-            for (String str : res){
-                System.out.println(str);
-            }
-        }else System.out.println(res);
+        List<String> res = new LsLauncher().launch(args);
     }
 
     public List<String> launch(String... args) {
